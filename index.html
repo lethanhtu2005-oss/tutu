@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WayEcho - nền tảng du lịch Hà Nội bằng giọng nói cho người khiếm thị">
+  <title>WayEcho — Du lịch Hà Nội bằng giọng nói</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#app">Bỏ qua, tới nội dung chính</a>
+
+  <header class="topbar">
+    <button class="brand" data-page="home" aria-label="Về trang chủ">
+      <span class="brand-mark">W</span>
+      <span>Way<span>Echo</span></span>
+    </button>
+    <nav aria-label="Điều hướng chính">
+      <button data-page="explore">Khám phá</button>
+      <button data-page="search">Tìm kiếm</button>
+      <button data-page="trips">Chuyến đi</button>
+      <button data-page="bookings">Đặt chỗ <span id="bookingCount" class="nav-count hidden">0</span></button>
+      <button data-page="support">Hỗ trợ</button>
+    </nav>
+    <button class="profile-btn" id="profileOpen">Nhu cầu của tôi</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <div><strong>WayEcho</strong><br><span>Hear your way.</span></div>
+    <div class="footer-links">
+      <button data-page="explore">Khám phá</button>
+      <button data-page="search">Tìm kiếm bằng giọng nói</button>
+      <button data-page="trips">Chuyến đi của tôi</button>
+      <button data-page="support">Hỗ trợ</button>
+    </div>
+    <div class="small">Sản phẩm demo học phần Du lịch điện tử</div>
+  </footer>
+
+  <div id="modalRoot"></div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
